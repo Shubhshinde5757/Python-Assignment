@@ -1,1 +1,54 @@
+# What is a user defined function?
 
+def multiply(a,b):
+    return a*b
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Multiplication =",multiply(num1,num2))
+
+
+# predict the output
+ 
+def fun():
+    x = 10
+    print(x)
+    
+fun()
+print(x)
+
+
+#unction that prints a message but returns nothing
+
+def greet():
+    print("Hello, Welcome!")
+
+greet()
+
+
+# Program to display data type, memory address, and size in bytes
+
+
+import sys
+x = input("Enter a value :")
+
+print("Data Type :",type(x))
+print("Memory Address:",id(x))
+print("Size in Byte :",sys . getsizeof(x))
+
+
+# Predict the output
+a = 5
+print(type(a))
+
+a = 5.5
+print(type(a))
+
+a ="python"
+print(type(a))
+
+#output
+
+<class'int'>
+<class'flout>
+<class'string'>
