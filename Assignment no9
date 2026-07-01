@@ -1,1 +1,64 @@
+# 1 Function Display() prints "Jay Ganesh"
+def Display():
+    print("Jay Ganesh")
+
+def main():
+    Display()
+
+if __name__ == "__main__":
+    main()
+
+# 2 Function ChkGreater() accepts two numbers and prints the greater number
+def ChkGreater(no1, no2):
+    if no1 > no2:
+        print(no1, "is greater")
+    else:
+        print(no2, "is greater")
+
+def main():
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    ChkGreater(a, b)
+
+if __name__ == "__main__":
+    main()
+
+# 3. Accept one number and print its square
+def Square(no):
+    print("Square =", no * no)
+
+def main():
+    num = int(input("Enter a number: "))
+    Square(num)
+
+if __name__ == "__main__":
+    main()
+
+
+# 4 Accept one number and print its cube 
+def Cube(no):
+    print("Cube =", no * no * no)
+
+def main():
+    num = int(input("Enter a number: "))
+    Cube(num)
+
+if __name__ == "__main__":
+    main()
+
+# 5. Check whether a number is divisible by both 3 and 5
+def ChkDivisible(no):
+    if no % 3 == 0 and no % 5 == 0:
+        print("Divisible by 3 and 5")
+    else:
+        print("Not divisible by 3 and 5")
+
+def main():
+    num = int(input("Enter a number: "))
+    ChkDivisible(num)
+
+if __name__ == "__main__":
+    main()
+
+
 
