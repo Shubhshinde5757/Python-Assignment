@@ -1,17 +1,18 @@
-# 3.Print the sum of digits
-def SumDigits(no):
-    total = 0
+ # 3 Perform addition, subtraction, multiplication and division
+def Arithmetic(no1, no2):
+    print("Addition =", no1 + no2)
+    print("Subtraction =", no1 - no2)
+    print("Multiplication =", no1 * no2)
 
-    while no > 0:
-        digit = no % 10
-        total += digit
-        no = no // 10
-
-    print("Sum =", total)
+    if no2 != 0:
+        print("Division =", no1 / no2)
+    else:
+        print("Division not possible")
 
 def main():
-    num = int(input("Enter a number: "))
-    SumDigits(num)
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+    Arithmetic(num1, num2)
 
 if __name__ == "__main__":
     main()

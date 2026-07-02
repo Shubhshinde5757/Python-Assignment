@@ -1,19 +1,13 @@
-# 1.Check whether a number is Prime or not
-def ChkPrime(no):
-    if no <= 1:
-        print("Not Prime")
-        return
-
-    for i in range(2, no):
-        if no % i == 0:
-            print("Not Prime")
-            return
-
-    print("Prime Number")
+# 1 Check whether a character is a vowel or consonant
+def ChkVowel(ch):
+    if ch in ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'):
+        print("Vowel")
+    else:
+        print("Consonant")
 
 def main():
-    num = int(input("Enter a number: "))
-    ChkPrime(num)
+    ch = input("Enter a character: ")
+    ChkVowel(ch)
 
 if __name__ == "__main__":
     main()
