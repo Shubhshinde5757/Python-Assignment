@@ -1,0 +1,65 @@
+# 1 Print the multiplication table of a number
+
+
+def Table(no):
+    for i in range(1, 11):
+        print(no * i, end=" ")
+
+def main():
+    num = int(input("Enter a number: "))
+    Table(num)
+
+if __name__ == "__main__":
+    main()
+
+# 2 Print the sum of first N natural numbers
+def SumNatural(no):
+    total = 0
+    for i in range(1, no + 1):
+        total += i
+    print("Sum =", total)
+
+def main():
+    num = int(input("Enter a number: "))
+    SumNatural(num)
+
+if __name__ == "__main__":
+    main()
+
+# 3 Print the factorial of a number
+def Factorial(no):
+    fact = 1
+    for i in range(1, no + 1):
+        fact *= i
+    print("Factorial =", fact)
+
+def main():
+    num = int(input("Enter a number: "))
+    Factorial(num)
+
+if __name__ == "__main__":
+    main()
+
+# 4 Print all even numbers till the given number
+def EvenNumbers(no):
+    for i in range(2, no + 1, 2):
+        print(i, end=" ")
+
+def main():
+    num = int(input("Enter a number: "))
+    EvenNumbers(num)
+
+if __name__ == "__main__":
+    main()
+
+# 5 Print all odd numbers till the given number
+def OddNumbers(no):
+    for i in range(1, no + 1, 2):
+        print(i, end=" ")
+
+def main():
+    num = int(input("Enter a number: "))
+    OddNumbers(num)
+
+if __name__ == "__main__":
+    main()
