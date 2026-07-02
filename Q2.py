@@ -1,13 +1,16 @@
-# 2 Print all factors of a number
+# 2.Count the digits in a number
+def CountDigits(no):
+    count = 0
 
-def Factors(no):
-    for i in range(1, no + 1):
-        if no % i == 0:
-            print(i, end=" ")
+    while no > 0:
+        no = no // 10
+        count += 1
+
+    print("Count =", count)
 
 def main():
     num = int(input("Enter a number: "))
-    Factors(num)
+    CountDigits(num)
 
 if __name__ == "__main__":
     main()
