@@ -1,0 +1,77 @@
+# 1. Accept length and width of a rectangle and print the area
+def RectangleArea(length, width):
+    area = length * width
+    print("Area of Rectangle =", area)
+
+def main():
+    length = float(input("Enter length: "))
+    width = float(input("Enter width: "))
+    RectangleArea(length, width)
+
+if __name__ == "__main__":
+    main()
+
+
+ # 2. Accept the radius of a circle and print the area
+def CircleArea(radius):
+    area = 3.14 * radius * radius
+    print("Area of Circle =", area)
+
+def main():
+    radius = float(input("Enter radius: "))
+    CircleArea(radius)
+
+if __name__ == "__main__":
+    main()
+
+
+# 3. Check whether a number is a Perfect Number
+def PerfectNumber(no):
+    total = 0
+
+    for i in range(1, no):
+        if no % i == 0:
+            total += i
+
+    if total == no:
+        print("Perfect Number")
+    else:
+        print("Not Perfect Number")
+
+def main():
+    num = int(input("Enter a number: "))
+    PerfectNumber(num)
+
+if __name__ == "__main__":
+    main()
+
+
+# 4. Print the Binary Equivalent of a Number
+def Binary(no):
+    print("Binary Equivalent =", bin(no)[2:])
+
+def main():
+    num = int(input("Enter a number: "))
+    Binary(num)
+
+if __name__ == "__main__":
+    main()
+
+
+# 5. Accept marks and display grade
+def Grade(marks):
+    if marks >= 75:
+        print("Distinction")
+    elif marks >= 60:
+        print("First Class")
+    elif marks >= 50:
+        print("Second Class")
+    else:
+        print("Fail")
+
+def main():
+    marks = int(input("Enter marks: "))
+    Grade(marks)
+
+if __name__ == "__main__":
+    main()
