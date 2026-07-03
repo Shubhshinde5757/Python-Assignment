@@ -1,0 +1,98 @@
+# 1.Check whether a number is Prime or not
+def ChkPrime(no):
+    if no <= 1:
+        print("Not Prime")
+        return
+
+    for i in range(2, no):
+        if no % i == 0:
+            print("Not Prime")
+            return
+
+    print("Prime Number")
+
+def main():
+    num = int(input("Enter a number: "))
+    ChkPrime(num)
+
+if __name__ == "__main__":
+    main()
+
+
+# 2.Count the digits in a number
+def CountDigits(no):
+    count = 0
+
+    while no > 0:
+        no = no // 10
+        count += 1
+
+    print("Count =", count)
+
+def main():
+    num = int(input("Enter a number: "))
+    CountDigits(num)
+
+if __name__ == "__main__":
+    main()
+
+
+# 3.Print the sum of digits
+def SumDigits(no):
+    total = 0
+
+    while no > 0:
+        digit = no % 10
+        total += digit
+        no = no // 10
+
+    print("Sum =", total)
+
+def main():
+    num = int(input("Enter a number: "))
+    SumDigits(num)
+
+if __name__ == "__main__":
+    main()
+
+
+# 4 Print the reverse of a number
+def Reverse(no):
+    rev = 0
+
+    while no > 0:
+        digit = no % 10
+        rev = rev * 10 + digit
+        no = no // 10
+
+    print("Reverse =", rev)
+
+def main():
+    num = int(input("Enter a number: "))
+    Reverse(num)
+
+if __name__ == "__main__":
+    main()
+
+
+# 5 Check whether a number is Palindrome or not
+def ChkPalindrome(no):
+    temp = no
+    rev = 0
+
+    while no > 0:
+        digit = no % 10
+        rev = rev * 10 + digit
+        no = no // 10
+
+    if temp == rev:
+        print("Palindrome")
+    else:
+        print("Not Palindrome")
+
+def main():
+    num = int(input("Enter a number: "))
+    ChkPalindrome(num)
+
+if __name__ == "__main__":
+    main()
