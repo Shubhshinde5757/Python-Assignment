@@ -1,0 +1,105 @@
+# Q1. Write a lambda function using map() which accepts a list of numbers and returns a list of squares of each number.
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+square = list(map(lambda x: x**2, numbers))
+
+print("Original List :", numbers)
+print("Square List   :", square)
+
+# Q2. Write a lambda function using filter() which accepts a list of numbers and returns a list of even numbers.
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+even = list(filter(lambda x: x % 2 == 0, numbers))
+
+print("Original List :", numbers)
+print("Even Numbers  :", even)
+
+
+# Q3. Write a lambda function using filter() which accepts a list of numbers and returns a list of odd numbers.
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+odd = list(filter(lambda x: x % 2 != 0, numbers))
+
+print("Original List :", numbers)
+print("Odd Numbers   :", odd)
+
+
+# Q4. Write a lambda function using reduce() which accepts a list of numbers and returns the addition of all elements.
+
+from functools import reduce
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+total = reduce(lambda x, y: x + y, numbers)
+
+print("Original List :", numbers)
+print("Sum =", total)
+
+
+# Q5. Write a lambda function using reduce() which accepts a list of numbers and returns the maximum element.
+
+from functools import reduce
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+maximum = reduce(lambda x, y: x if x > y else y, numbers)
+
+print("Original List :", numbers)
+print("Maximum =", maximum)
+
+
+# Q6. Write a lambda function using reduce() which accepts a list of numbers and returns the minimum element.
+
+from functools import reduce
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+minimum = reduce(lambda x, y: x if x < y else y, numbers)
+
+print("Original List :", numbers)
+print("Minimum =", minimum)
+
+
+# Q7. Write a lambda function using filter() which accepts a list of strings and returns a list of strings having length greater than 5.
+
+words = input("Enter words separated by space: ").split()
+
+result = list(filter(lambda x: len(x) > 5, words))
+
+print("Original List :", words)
+print("Strings with length > 5 :", result)
+
+
+# Q8. Write a lambda function using filter() which accepts a list of numbers and returns a list of numbers divisible by both 3 and 5.
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+result = list(filter(lambda x: x % 3 == 0 and x % 5 == 0, numbers))
+
+print("Original List :", numbers)
+print("Numbers divisible by 3 and 5 :", result)
+
+
+# Q9. Write a lambda function using reduce() which accepts a list of numbers and returns the product of all elements.
+
+from functools import reduce
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+product = reduce(lambda x, y: x * y, numbers)
+
+print("Original List :", numbers)
+print("Product =", product)
+
+
+# Q10. Write a lambda function using filter() which accepts a list of numbers and returns the count of even numbers.
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+
+even = list(filter(lambda x: x % 2 == 0, numbers))
+
+print("Original List :", numbers)
+print("Count of Even Numbers =", len(even))
