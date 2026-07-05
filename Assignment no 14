@@ -1,0 +1,86 @@
+# Q1. Write a lambda function which accepts one number and returns square of that number.
+
+square = lambda x: x * x
+
+num = int(input("Enter a number: "))
+print("Square =", square(num))
+
+# Q2. Write a lambda function which accepts one number and returns cube of that number.
+
+cube = lambda x: x ** 3
+
+num = int(input("Enter a number: "))
+print("Cube =", cube(num))
+
+# Q3. Write a lambda function which accepts two numbers and returns maximum number.
+
+maximum = lambda a, b: a if a > b else b
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Maximum =", maximum(num1, num2))
+
+
+# Q4. Write a lambda function which accepts two numbers and returns minimum number.
+
+minimum = lambda a, b: a if a < b else b
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Minimum =", minimum(num1, num2))
+
+
+# Q5. Write a lambda function which accepts one number and returns True if number is even otherwise False.
+
+is_even = lambda x: x % 2 == 0
+
+num = int(input("Enter a number: "))
+print(is_even(num))
+
+
+# Q6. Write a lambda function which accepts one number and returns True if number is odd otherwise False.
+
+is_odd = lambda x: x % 2 != 0
+
+num = int(input("Enter a number: "))
+print(is_odd(num))
+
+
+# Q7. Write a lambda function which accepts one number and returns True if divisible by 5.
+
+divisible_by_5 = lambda x: x % 5 == 0
+
+num = int(input("Enter a number: "))
+print(divisible_by_5(num))
+
+
+# Q8. Write a lambda function which accepts two numbers and returns addition.
+
+addition = lambda a, b: a + b
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Addition =", addition(num1, num2))
+
+
+# Q9. Write a lambda function which accepts two numbers and returns multiplication.
+
+multiplication = lambda a, b: a * b
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Multiplication =", multiplication(num1, num2))
+
+# Q10. Write a lambda function which accepts three numbers and returns largest number.
+
+largest = lambda a, b, c: a if (a >= b and a >= c) else (b if b >= c else c)
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+print("Largest =", largest(num1, num2, num3))
