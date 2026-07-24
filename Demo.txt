@@ -1,8 +1,0 @@
-######################################
-# 
-#   Welcome to Marvellous Infosystems.
-#
-#
-#   Python Automation Assignment.
-
-####################################
